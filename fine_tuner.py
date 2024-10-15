@@ -6,7 +6,7 @@ def tokenize_function(tokenizer, prepared_dict):
     return tokenizer(prepared_dict['text'], padding='max_length', truncation=True)
 
 def fine_tune_model(corpus, model_name='distilgpt2', output_dir='./results'):
-    """Fine-tunes a pre-trained GPT-2 model using the given corpus."""
+    """Fine-tunes a pre-trained model using cleaned text."""
     tokenizer = GPT2Tokenizer.from_pretrained(model_name)
     model = GPT2LMHeadModel.from_pretrained(model_name)
 

@@ -1,3 +1,4 @@
+import asyncio
 from async_fetcher import fetch_and_parse
 from multithread_cleaning import clean_text_multithreaded
 from fine_tuner import fine_tune_model
@@ -9,7 +10,7 @@ def main():
         'https://timesofindia.indiatimes.com/business/india-business'
     ]
     raw_html_texts = fetch_and_parse(urls)
-    print("Fetched and parsed HTML content.")
+    print("Fetched and parsed (from asynch_fetcher module) HTML content.")
 
     cleaned_texts = clean_text_multithreaded(raw_html_texts)
     print("Cleaned text data.")
@@ -18,4 +19,4 @@ def main():
     print("Fine-tuned the LLM with the cleaned text data.")
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
