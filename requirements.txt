@@ -1,0 +1,6 @@
+aiohttp
+beautifulsoup4
+transformers
+datasets
+torch
+textblob

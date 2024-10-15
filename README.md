@@ -1,1 +1,1 @@
-# updated_MultiThread
+# This is updated code of Multiprocessing code which perform more refined functions and suitable for finetuning the distilgpt2(lite version of gpt2).
