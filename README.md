@@ -1,1 +1,1 @@
-# This is updated code of Multiprocessing code which perform more refined functions and suitable for finetuning the distilgpt2(lite version of gpt2).
+# This is updated code of Multiprocessing code which perform more refined functions and suitable for finetuning the distilgpt2 LLM(lite version of gpt2).
